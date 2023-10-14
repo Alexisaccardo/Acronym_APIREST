@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "10a90a96-bdee-44d7-a0ed-b25ee0c964a9",
+		"name": "Product_acronym",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17723644"
+	},
+	"item": [
+		{
+			"name": "Register_Acronym",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": \"1006560\",\r\n        \"name_product\": \"Iphone 15pro\",\r\n        \"status\": \"activo\",\r\n        \"name_acronym\": \"JAC\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/register_product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register_product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit_Acronym",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": \"1006560\",\r\n        \"name_product\": \"iphone 15pro\",\r\n        \"status\": \"inactivo\",\r\n        \"name_acronym\": \"JAC\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/edit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"edit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
